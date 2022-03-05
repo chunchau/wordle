@@ -1,0 +1,74 @@
+body {
+  background-color: #121213;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
+  align-items: stretch;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  border-bottom: 1px solid #3a3a3c;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+header h1 {
+  margin: 0;
+  flex-grow: 1;
+  text-align: center;
+  font-family: "Font Awesome 5 Free";
+  letter-spacing: 3px;
+}
+.fa-solid {
+  padding: 5px;
+}
+
+.grid {
+  margin: 0 auto;
+  overflow: auto;
+  display: grid;
+  align-content: center;
+  flex-grow: 1;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  padding: 5px 0;
+}
+.box {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #3a3a3c;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-bottom: 5px;
+}
+
+.keyboard-row {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.keyboard button {
+  border: none;
+  border-radius: 3px;
+  height: 50px;
+  width: 40px;
+  background-color: grey;
+  color: white;
+  font-weight: 800;
+}
+
+.keyboard button.wide {
+  width: 62px;
+}
